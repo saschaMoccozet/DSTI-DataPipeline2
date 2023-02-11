@@ -38,6 +38,7 @@ spark-submit target/scala-2.12/sample-job-assembly-1.0.jar data/eCO2mix_RTE_Annu
 
 
 ### Package the project
+You can found a tutorial about sbt at : https://alvinalexander.com/scala/sbt-how-to-compile-run-package-scala-project/
 To package the project run the command:
 ```bash
 sbt package
