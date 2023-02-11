@@ -23,26 +23,19 @@ For windows : download and extract https://github.com/coursier/launchers/raw/mas
 
 then run the exe file and follow the instruction!
 
-### Create the structure of an STB project (if needed)
-You can found all the ressorces in this website: https://alvinalexander.com/scala/how-to-create-sbt-project-directory-structure-scala/
+### Build and Run the project
+Your can found a samble example of a running code at [https://alvinalexander.com/scala/sbt-how-to-compile-run-package-scala-project/](https://github.com/jlcanela/simple-job)
 
-From the root of the project run the command
+To build a JAR for submission via `spark-submit` use the `assembly` SBT task.
 ```bash
-bash mkdirs4sbt.sh
+sbt assembly 
 ```
-and it will initiate the stb structure inside your root folder
 
-### Compile and run the project
-Your can found all the ressorces on this website : https://alvinalexander.com/scala/sbt-how-to-compile-run-package-scala-project/
+To run the Spark job
+```
+spark-submit target/scala-2.12/sample-job-assembly-1.0.jar data/eCO2mix_RTE_Annuel-Definitif_2020.csv
+```
 
-To compile the project execute the command:
-```bash
-sbt compile
-```
-To run the project execute the command:
-```bash
-sbt run
-```
 
 ### Package the project
 To package the project run the command:
