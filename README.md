@@ -49,3 +49,25 @@ sbt package
 ### run the batch using the spark-submit command locally 
 
 ### copy the data to AWS s3 so that the AWS spark-submit command executes without error (aws s3 …)
+
+## Files input output
+
+## Input
+The electricity production data for 2020 is published at https://eco2mix.rte-france.com/download/eco2mix/eCO2mix_RTE_Annuel-Definitif_2020.zip
+I had to change th type of the file from xsl to CSV because I could not make a library works with the xsl input ...
+
+## Output
+### CO2_emission.csv
+with columns : “Date,Time,Oil_CO2,Coal_CO2” for each data point.
+
+IT compute the CO2 emissions for the coal / oil / gas using the provided data
+
+### CO2_emission_report1.csv 
+with columns : “Date,Time,Coal_CO2_greater_than_Oil_CO2” for each data point
+
+IT report for each 15mn period if the CO2_emission_coal > CO2_emission_oil.
+
+### CO2_emission_report2.csv
+with columns: “Date,Coal_CO2_greater_than_Oil_CO2” for each day.
+
+It report for each day if the CO2_emission_coal > CO2_emission_oil
