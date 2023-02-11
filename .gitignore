@@ -1,2 +1,10 @@
-*.class
-*.log
+.bsp
+.bloop
+.dccache
+.history
+.metals
+.vscode
+data/sample.json
+target
+project/metals.sbt
+project/project
