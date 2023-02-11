@@ -16,12 +16,16 @@ git clone git@github.com:saschaMoccozet/DSTI-DataPipeline2.git
 
 ### Install stb
 You can found all the ressorces on this website : https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Windows.html
+
 It also exists for linux and MacOs by searching on the table of content.
+
 For windows : download and extract https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-win32.zip
+
 then run the exe file and follow the instruction!
 
 ### Create the structure of an STB project (if needed)
 You can found all the ressorces in this website: https://alvinalexander.com/scala/how-to-create-sbt-project-directory-structure-scala/
+
 From the root of the project run the command
 ```bash
 bash mkdirs4sbt.sh
