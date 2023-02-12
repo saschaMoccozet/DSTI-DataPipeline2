@@ -3,13 +3,13 @@ version := "1.0"
 scalaVersion := "2.12.17"
 
 val sparkVersion = "3.3.0"
-val slf4jVersion = "1.7.16"
+//val slf4jVersion = "1.7.16"
 
 // Note the dependencies are provided
 libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion % "provided"
 libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion % "provided"
-libraryDependencies += "org.slf4j" % "slf4j-api" % slf4jVersion
-libraryDependencies += "org.slf4j" % "slf4j-log4j12" % slf4jVersion
+//libraryDependencies += "org.slf4j" % "slf4j-api" % slf4jVersion
+//libraryDependencies += "org.slf4j" % "slf4j-log4j12" % slf4jVersion
 // Do not include Scala in the assembled JAR
 //assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = false)
 
